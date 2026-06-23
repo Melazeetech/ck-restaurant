@@ -36,14 +36,21 @@ const galleryImages = [
     src: '/assets/jollof_rice.png',
     alt: 'Smokey Party Jollof Rice platter',
     tag: 'Signature Rice',
-    size: 'col-span-12 md:col-span-6 h-80',
+    size: 'col-span-12 md:col-span-4 h-80',
   },
   {
     id: 6,
     src: '/assets/burger_fries.png',
     alt: 'CK Double Decker Cheese Burger',
     tag: 'Fast Food',
-    size: 'col-span-12 md:col-span-6 h-80',
+    size: 'col-span-12 md:col-span-4 h-80',
+  },
+  {
+    id: 7,
+    src: '/assets/storefront.png',
+    alt: 'CK Restaurant Storefront Facade',
+    tag: 'Storefront',
+    size: 'col-span-12 md:col-span-4 h-80',
   },
 ];
 

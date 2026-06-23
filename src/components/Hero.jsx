@@ -8,8 +8,8 @@ export default function Hero() {
       {/* Background Image with dark crimson gradients */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/hero_grilled_food.png"
-          alt="Cinematic Grilled Food Platter"
+          src="/assets/storefront.png"
+          alt="CK Restaurant Storefront Facade"
           className="w-full h-full object-cover object-center opacity-45 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#080303] via-black/80 to-transparent" />
