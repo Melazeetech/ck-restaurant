@@ -10,7 +10,7 @@ export default function Hero() {
         <img
           src="/assets/storefront.png"
           alt="CK Restaurant Storefront Facade"
-          className="w-full h-full object-cover object-center opacity-30 scale-105"
+          className="w-full h-full object-cover object-center opacity-65 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#051020] via-[#051020]/90 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#051020] via-transparent to-[#051020]/40" />

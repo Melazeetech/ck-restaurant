@@ -20,9 +20,9 @@ const menuItems = [
   // 1. MAIN COURSE
   { id: 1, name: 'Jollof rice', category: 'Main Course', description: 'Smokey party-style long grain rice cooked in a rich, spiced tomato and pepper base.', image: '/assets/jollof_rice.png', featured: true, spicy: true, badge: 'Popular' },
   { id: 2, name: 'Fried rice', category: 'Main Course', description: 'Delicious stir-fried rice loaded with fresh vegetables, liver, and traditional seasoning.', image: '/assets/jollof_rice.png' },
-  { id: 3, name: 'White rice & stew', category: 'Main Course', description: 'Fluffy white rice served with a rich, peppered tomato and red pepper stew.', image: '/assets/chef_plating.png' },
+  { id: 3, name: 'White rice & stew', category: 'Main Course', description: 'Fluffy white rice served with a rich, peppered tomato and red pepper stew.', image: '/assets/jollof_rice.png' },
   { id: 4, name: 'C.K special fried rice', category: 'Main Course', description: 'Our chef special stir-fried rice loaded with proteins, shrimp, and premium herbs.', image: '/assets/jollof_rice.png', featured: true, badge: 'Chef Special' },
-  { id: 5, name: 'Jollof spaghetti', category: 'Main Course', description: 'Aromatic spaghetti pasta cooked in a rich, smoky peppered tomato sauce.', image: '/assets/chef_plating.png' },
+  { id: 5, name: 'Jollof spaghetti', category: 'Main Course', description: 'Aromatic spaghetti pasta cooked in a rich, smoky peppered tomato sauce.', image: '/assets/jollof_rice.png' },
   { id: 6, name: 'CK special noodles', category: 'Main Course', description: 'Signature wok-fried noodles tossed with fresh veggies and seasoned chicken strips.', image: '/assets/burger_fries.png' },
   { id: 7, name: 'Moi-moi', category: 'Main Course', description: 'Steamed savory bean pudding enriched with eggs, fish, and authentic spices.', image: '/assets/tuwo_shinkafa.png' },
   { id: 8, name: 'Indomie & egg', category: 'Main Course', description: 'Quick-boiled noodles stir-fried with onions, fresh peppers, and served with a fried egg.', image: '/assets/burger_fries.png' },
@@ -76,29 +76,29 @@ const menuItems = [
   { id: 46, name: 'Cow leg pepper soup', category: 'Peppersoups', description: 'Gelatinous cow leg chunks cooked in highly aromatic spicy peppersoup broth.', image: '/assets/grilled_chicken.png' },
 
   // 7. MOCKTAILS
-  { id: 47, name: 'Blue moon', category: 'Mocktails', description: 'Refreshing blue curacao blend with lemon, mint, and soda water.', image: '/assets/chef_plating.png' },
-  { id: 48, name: 'Cuddles on the beach', category: 'Mocktails', description: 'Sweet peach, cranberry, and orange juices served ice cold.', image: '/assets/chef_plating.png' },
-  { id: 49, name: 'Chapman', category: 'Mocktails', description: 'Nigeria’s classic cocktail with Angostura bitters, Fanta, Sprite, and cucumber.', image: '/assets/chef_plating.png' },
-  { id: 50, name: 'Pineapple sunrise', category: 'Mocktails', description: 'Zesty pineapple juice layer over sweet grenadine syrup.', image: '/assets/chef_plating.png' },
-  { id: 51, name: 'Snow white', category: 'Mocktails', description: 'Creamy coconut milk mixed with fresh lime juice and soda.', image: '/assets/chef_plating.png' },
-  { id: 52, name: 'Virgin pina colada', category: 'Mocktails', description: 'Creamy coconut cream and sweet pineapple juice blended with ice.', image: '/assets/chef_plating.png' },
-  { id: 53, name: 'Zobo drink', category: 'Mocktails', description: 'Local hibiscus leaf brew sweetened with pineapple, ginger, and cloves.', image: '/assets/chef_plating.png' },
+  { id: 47, name: 'Blue moon', category: 'Mocktails', description: 'Refreshing blue curacao blend with lemon, mint, and soda water.', image: '/assets/mocktail_drink.png' },
+  { id: 48, name: 'Cuddles on the beach', category: 'Mocktails', description: 'Sweet peach, cranberry, and orange juices served ice cold.', image: '/assets/mocktail_drink.png' },
+  { id: 49, name: 'Chapman', category: 'Mocktails', description: 'Nigeria’s classic cocktail with Angostura bitters, Fanta, Sprite, and cucumber.', image: '/assets/mocktail_drink.png' },
+  { id: 50, name: 'Pineapple sunrise', category: 'Mocktails', description: 'Zesty pineapple juice layer over sweet grenadine syrup.', image: '/assets/mocktail_drink.png' },
+  { id: 51, name: 'Snow white', category: 'Mocktails', description: 'Creamy coconut milk mixed with fresh lime juice and soda.', image: '/assets/mocktail_drink.png' },
+  { id: 52, name: 'Virgin pina colada', category: 'Mocktails', description: 'Creamy coconut cream and sweet pineapple juice blended with ice.', image: '/assets/mocktail_drink.png' },
+  { id: 53, name: 'Zobo drink', category: 'Mocktails', description: 'Local hibiscus leaf brew sweetened with pineapple, ginger, and cloves.', image: '/assets/mocktail_drink.png' },
 
   // 8. MILKSHAKES SMOOTHIE & JUICES
-  { id: 54, name: 'Vanilla milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Thick, creamy blend of gourmet vanilla bean ice cream and milk.', image: '/assets/burger_fries.png' },
-  { id: 55, name: 'Strawberry milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Creamy milkshake blended with real strawberries and sweet syrup.', image: '/assets/burger_fries.png' },
-  { id: 56, name: 'Chocolate milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Rich chocolate ice cream blended with dark chocolate fudge syrup.', image: '/assets/burger_fries.png' },
-  { id: 57, name: 'Banana milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Creamy banana puree milkshake topped with whipped cream.', image: '/assets/burger_fries.png' },
-  { id: 58, name: 'Date (dabino) milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Local sweet date fruit (Dabino) blended into a healthy milk cream.', image: '/assets/burger_fries.png' },
-  { id: 59, name: 'CK special milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Oreo cookies, chocolate fudge, vanilla ice cream and whipped cream.', image: '/assets/burger_fries.png', featured: true, badge: 'Indulgent' },
-  { id: 60, name: 'Smoothie', category: 'Milkshakes Smoothie & Juices', description: 'Healthy blended mix of seasonal fresh fruits.', image: '/assets/burger_fries.png' },
-  { id: 61, name: 'Fresh fruit juice', category: 'Milkshakes Smoothie & Juices', description: '100% natural freshly squeezed orange or pineapple juice.', image: '/assets/burger_fries.png' },
+  { id: 54, name: 'Vanilla milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Thick, creamy blend of gourmet vanilla bean ice cream and milk.', image: '/assets/creamy_milkshake.png' },
+  { id: 55, name: 'Strawberry milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Creamy milkshake blended with real strawberries and sweet syrup.', image: '/assets/creamy_milkshake.png' },
+  { id: 56, name: 'Chocolate milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Rich chocolate ice cream blended with dark chocolate fudge syrup.', image: '/assets/creamy_milkshake.png' },
+  { id: 57, name: 'Banana milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Creamy banana puree milkshake topped with whipped cream.', image: '/assets/creamy_milkshake.png' },
+  { id: 58, name: 'Date (dabino) milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Local sweet date fruit (Dabino) blended into a healthy milk cream.', image: '/assets/creamy_milkshake.png' },
+  { id: 59, name: 'CK special milkshake', category: 'Milkshakes Smoothie & Juices', description: 'Oreo cookies, chocolate fudge, vanilla ice cream and whipped cream.', image: '/assets/creamy_milkshake.png', featured: true, badge: 'Indulgent' },
+  { id: 60, name: 'Smoothie', category: 'Milkshakes Smoothie & Juices', description: 'Healthy blended mix of seasonal fresh fruits.', image: '/assets/creamy_milkshake.png' },
+  { id: 61, name: 'Fresh fruit juice', category: 'Milkshakes Smoothie & Juices', description: '100% natural freshly squeezed orange or pineapple juice.', image: '/assets/creamy_milkshake.png' },
 
   // 9. TEAS & PARFAIT
-  { id: 62, name: 'Arabian tea', category: 'Teas & Parfait', description: 'Authentic spiced black tea infused with mint, cardamom, and saffron.', image: '/assets/chef_plating.png' },
-  { id: 63, name: 'Jude special tea', category: 'Teas & Parfait', description: 'Aromatic green tea blended with fresh herbs and honey.', image: '/assets/chef_plating.png' },
-  { id: 64, name: 'Fruit parfait', category: 'Teas & Parfait', description: 'Layers of creamy greek yoghurt, fresh strawberries, banana, and granola.', image: '/assets/chef_plating.png' },
-  { id: 65, name: 'Cake parfait', category: 'Teas & Parfait', description: 'Rich cake crumbs layered with sweet vanilla whipped cream and cherries.', image: '/assets/chef_plating.png' }
+  { id: 62, name: 'Arabian tea', category: 'Teas & Parfait', description: 'Authentic spiced black tea infused with mint, cardamom, and saffron.', image: '/assets/herbal_tea.png' },
+  { id: 63, name: 'Jude special tea', category: 'Teas & Parfait', description: 'Aromatic green tea blended with fresh herbs and honey.', image: '/assets/herbal_tea.png' },
+  { id: 64, name: 'Fruit parfait', category: 'Teas & Parfait', description: 'Layers of creamy greek yoghurt, fresh strawberries, banana, and granola.', image: '/assets/herbal_tea.png' },
+  { id: 65, name: 'Cake parfait', category: 'Teas & Parfait', description: 'Rich cake crumbs layered with sweet vanilla whipped cream and cherries.', image: '/assets/herbal_tea.png' }
 ];
 
 export default function FeaturedMenu() {
@@ -199,8 +199,8 @@ export default function FeaturedMenu() {
         {/* Interactive Layout Split */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Left Side: Traditional Menu Book List */}
-          <div className={`col-span-12 ${featuredShowcase.length > 0 ? 'lg:col-span-8' : 'lg:col-span-12'} glass-panel p-6 md:p-10 rounded-3xl`}>
+          {/* Left Side: Traditional Menu Book List with Thumbnails */}
+          <div className={`col-span-12 ${featuredShowcase.length > 0 ? 'lg:col-span-8' : 'lg:col-span-12'} glass-panel p-4 md:p-10 rounded-3xl`}>
             <div className="flex justify-between items-center mb-8 pb-4 border-b border-white/5">
               <h3 className="font-serif text-2xl font-bold text-white tracking-wide flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-brand-orange" />
@@ -217,37 +217,51 @@ export default function FeaturedMenu() {
                 <p className="text-gray-400">No items match your search or filter.</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                 {menuBookList.map((item) => (
-                  <div key={item.id} className="group flex flex-col justify-between py-3 border-b border-white/5 hover:border-brand-orange/20 transition-colors text-left">
-                    <div className="flex justify-between items-baseline gap-2">
-                      <h4 className="font-serif text-lg font-bold text-white group-hover:text-brand-orange transition-colors">
-                        {item.name}
-                        {item.spicy && <span className="ml-2 text-xs text-orange-500">🌶️</span>}
-                      </h4>
-                      <div className="flex-grow border-b border-dotted border-white/10 mx-2 group-hover:border-brand-orange/30 transition-colors" />
+                  <div key={item.id} className="group flex gap-4 py-3.5 border-b border-white/5 hover:border-brand-orange/20 transition-all text-left">
+                    
+                    {/* Small thumbnail on the left, matching PDF layout */}
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-[#030a14] border border-white/10 shadow-md">
+                      <img 
+                        src={item.image} 
+                        alt={item.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                      />
                     </div>
-                    <div className="flex justify-between items-center gap-4 mt-2">
-                      <p className="text-xs text-gray-400 font-light leading-relaxed text-left flex-grow max-w-[85%]">
-                        {item.description}
-                      </p>
-                      <a
-                        href={getWhatsAppLink(item.name)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-1.5 px-3 rounded-lg bg-white/5 hover:bg-brand-orange text-white text-[9px] font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-1 active:scale-95 shadow-md shadow-black/10 shrink-0"
-                      >
-                        <ShoppingBag className="w-3 h-3" />
-                        Order
-                      </a>
+                    
+                    {/* Item Details */}
+                    <div className="flex-grow flex flex-col justify-between min-w-0">
+                      <div className="flex justify-between items-baseline gap-2">
+                        <h4 className="font-serif text-base font-bold text-white group-hover:text-brand-orange transition-colors truncate">
+                          {item.name}
+                          {item.spicy && <span className="ml-2 text-xs text-orange-500">🌶️</span>}
+                        </h4>
+                        <div className="flex-grow border-b border-dotted border-white/10 mx-2 group-hover:border-brand-orange/30 transition-colors" />
+                      </div>
+                      <div className="flex justify-between items-center gap-4 mt-1">
+                        <p className="text-xs text-gray-400 font-light leading-relaxed text-left flex-grow truncate max-w-[70%]">
+                          {item.description}
+                        </p>
+                        <a
+                          href={getWhatsAppLink(item.name)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="py-1.5 px-3 rounded-lg bg-white/5 hover:bg-brand-orange text-white text-[9px] font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-1 active:scale-95 shadow-md shadow-black/10 shrink-0"
+                        >
+                          <ShoppingBag className="w-3 h-3" />
+                          Order
+                        </a>
+                      </div>
                     </div>
+
                   </div>
                 ))}
               </div>
             )}
           </div>
 
-          {/* Right Side: Featured Card Showcase (Only shown if active list contains featured items) */}
+          {/* Right Side: Featured Card Showcase */}
           {featuredShowcase.length > 0 && (
             <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
               <h3 className="font-serif text-xl font-bold text-white tracking-wide text-left mb-2 flex items-center gap-2 pl-2">
