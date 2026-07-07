@@ -33,22 +33,22 @@ export default function DigitalVisibility() {
   };
 
   return (
-    <section id="digital-visibility" className="relative py-24 bg-black overflow-hidden">
+    <section id="digital-visibility" className="relative py-24 bg-[#051020] overflow-hidden">
       {/* Visual backgrounds */}
-      <div className="absolute top-10 left-10 w-96 h-96 bg-brand-red/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-brand-red/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-10 left-10 w-96 h-96 bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-brand-orange/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-brand-accent text-xs font-semibold uppercase tracking-[0.25em] block mb-3">
+          <span className="text-brand-orange text-xs font-semibold uppercase tracking-[0.25em] block mb-3">
             Digital Connection
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
             How Customers Find Us Online
           </h2>
-          <div className="w-12 h-1 bg-brand-red mx-auto mb-6" />
+          <div className="w-12 h-1 bg-brand-orange mx-auto mb-6" />
           <p className="text-gray-400 font-light">
             Stay connected with CK Restaurant. Place instant orders, reserve tables, track locations, or see what is trending in our kitchen.
           </p>
@@ -59,9 +59,9 @@ export default function DigitalVisibility() {
           
           {/* Column 1: Interactive Table Reservation Form */}
           <div id="reservation" className="lg:col-span-5 glass-panel p-8 rounded-3xl relative overflow-hidden border border-white/10">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/5 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-orange/5 rounded-full blur-2xl pointer-events-none" />
             
-            <span className="text-brand-accent text-[10px] uppercase font-bold tracking-widest block mb-1">
+            <span className="text-brand-orange text-[10px] uppercase font-bold tracking-widest block mb-1">
               Reservations
             </span>
             <h3 className="font-serif text-2xl font-bold text-white mb-6">
@@ -78,7 +78,7 @@ export default function DigitalVisibility() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="e.g. Hadiza Bello"
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-red rounded-xl text-sm text-white focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-orange rounded-xl text-sm text-white focus:outline-none transition-colors"
                 />
               </div>
 
@@ -91,7 +91,7 @@ export default function DigitalVisibility() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="e.g. +234 803 436 4691"
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-red rounded-xl text-sm text-white focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-orange rounded-xl text-sm text-white focus:outline-none transition-colors"
                 />
               </div>
 
@@ -103,12 +103,12 @@ export default function DigitalVisibility() {
                       name="guests"
                       value={formData.guests}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-red rounded-xl text-sm text-white focus:outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-orange rounded-xl text-sm text-white focus:outline-none transition-colors appearance-none cursor-pointer"
                     >
-                      <option className="bg-[#080303]">1 Guest</option>
-                      <option className="bg-[#080303]">2 Guests</option>
-                      <option className="bg-[#080303]">4 Guests</option>
-                      <option className="bg-[#080303]">6+ Guests</option>
+                      <option className="bg-[#051020]">1 Guest</option>
+                      <option className="bg-[#051020]">2 Guests</option>
+                      <option className="bg-[#051020]">4 Guests</option>
+                      <option className="bg-[#051020]">6+ Guests</option>
                     </select>
                     <Users className="absolute right-4 top-3.5 w-4 h-4 text-gray-400 pointer-events-none" />
                   </div>
@@ -121,14 +121,14 @@ export default function DigitalVisibility() {
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-red rounded-xl text-sm text-white focus:outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-orange rounded-xl text-sm text-white focus:outline-none transition-colors appearance-none cursor-pointer"
                     >
-                      <option className="bg-[#080303]" value="12:00">12:00 PM (Lunch)</option>
-                      <option className="bg-[#080303]" value="14:00">02:00 PM</option>
-                      <option className="bg-[#080303]" value="16:00">04:00 PM</option>
-                      <option className="bg-[#080303]" value="18:00">06:00 PM (Dinner)</option>
-                      <option className="bg-[#080303]" value="20:00">08:00 PM</option>
-                      <option className="bg-[#080303]" value="21:30">09:30 PM</option>
+                      <option className="bg-[#051020]" value="12:00">12:00 PM (Lunch)</option>
+                      <option className="bg-[#051020]" value="14:00">02:00 PM</option>
+                      <option className="bg-[#051020]" value="16:00">04:00 PM</option>
+                      <option className="bg-[#051020]" value="18:00">06:00 PM (Dinner)</option>
+                      <option className="bg-[#051020]" value="20:00">08:00 PM</option>
+                      <option className="bg-[#051020]" value="21:30">09:30 PM</option>
                     </select>
                     <Clock className="absolute right-4 top-3.5 w-4 h-4 text-gray-400 pointer-events-none" />
                   </div>
@@ -144,7 +144,7 @@ export default function DigitalVisibility() {
                     required
                     value={formData.date}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-red rounded-xl text-sm text-white focus:outline-none transition-colors cursor-pointer"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 focus:border-brand-orange rounded-xl text-sm text-white focus:outline-none transition-colors cursor-pointer"
                   />
                 </div>
               </div>
@@ -152,7 +152,7 @@ export default function DigitalVisibility() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full mt-4 py-4 rounded-xl bg-brand-red hover:bg-brand-red-dark disabled:bg-brand-red/50 text-white font-bold tracking-wider uppercase text-xs flex items-center justify-center gap-2 border border-brand-red shadow-lg shadow-brand-red/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                className="w-full mt-4 py-4 rounded-xl bg-brand-orange hover:bg-brand-orange-dark disabled:bg-brand-orange/50 text-white font-bold tracking-wider uppercase text-xs flex items-center justify-center gap-2 border border-brand-orange shadow-lg shadow-brand-orange/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
                 {isSubmitting ? (
                   <>
@@ -182,13 +182,13 @@ export default function DigitalVisibility() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
                 <span className="absolute bottom-3 left-3 bg-black/65 backdrop-blur-md border border-white/5 text-[9px] font-bold text-white px-2.5 py-1 rounded flex items-center gap-1.5">
-                  <MapPin className="w-3 h-3 text-brand-red" />
+                  <MapPin className="w-3 h-3 text-brand-orange" />
                   Bauchi Road, Jos
                 </span>
               </div>
               <div className="text-left mt-4">
                 <h4 className="font-serif text-lg font-bold text-white mb-2 flex items-center gap-2">
-                  <Navigation className="w-4 h-4 text-brand-accent" />
+                  <Navigation className="w-4 h-4 text-brand-orange" />
                   Navigation Map
                 </h4>
                 <p className="text-xs text-gray-400 font-light leading-relaxed mb-4">
@@ -198,7 +198,7 @@ export default function DigitalVisibility() {
                   href="https://maps.google.com/?q=No.+29/4+Bauchi+Road,+Yan+Taya+Junction,+Jos+Plateau+State,+Nigeria"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[10px] font-bold tracking-widest text-brand-accent uppercase hover:underline"
+                  className="inline-flex items-center gap-1 text-[10px] font-bold tracking-widest text-brand-orange uppercase hover:underline"
                 >
                   Get GPS Directions
                   <Send className="w-3 h-3" />
@@ -229,7 +229,7 @@ export default function DigitalVisibility() {
 
             {/* Local Delivery Info */}
             <div className="glass-panel p-6 rounded-3xl flex flex-col justify-between text-left">
-              <div className="w-12 h-12 rounded-2xl bg-brand-red/10 border border-brand-red/20 flex items-center justify-center text-brand-red mb-6">
+              <div className="w-12 h-12 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
                 <Award className="w-6 h-6" />
               </div>
               <div>
@@ -237,8 +237,8 @@ export default function DigitalVisibility() {
                 <p className="text-xs text-gray-400 font-light leading-relaxed mb-6">
                   Warm meals delivered to your doorstep at Bauchi Road, Terminus, Farin Gada, Federal Lowcost, Anglo Jos, and Rayfield areas.
                 </p>
-                <div className="text-[10px] font-bold text-brand-accent tracking-widest uppercase flex items-center gap-1.5">
-                  <CheckCircle className="w-3.5 h-3.5 text-brand-accent" />
+                <div className="text-[10px] font-bold text-brand-orange tracking-widest uppercase flex items-center gap-1.5">
+                  <CheckCircle className="w-3.5 h-3.5 text-brand-orange" />
                   Average Delivery: 30-45 Mins
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function DigitalVisibility() {
 
             {/* Social Media handles */}
             <div className="glass-panel p-6 rounded-3xl flex flex-col justify-between text-left">
-              <div className="w-12 h-12 rounded-2xl bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent mb-6">
+              <div className="w-12 h-12 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
                 <Share2 className="w-6 h-6" />
               </div>
               <div>
@@ -284,9 +284,9 @@ export default function DigitalVisibility() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="max-w-md w-full glass-panel p-8 rounded-3xl border border-brand-red/30 shadow-2xl text-center"
+              className="max-w-md w-full glass-panel p-8 rounded-3xl border border-brand-orange/30 shadow-2xl text-center"
             >
-              <div className="w-16 h-16 rounded-full bg-brand-red/10 border border-brand-red/20 flex items-center justify-center text-brand-accent mx-auto mb-6">
+              <div className="w-16 h-16 rounded-full bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mx-auto mb-6">
                 <CheckCircle className="w-8 h-8" />
               </div>
               
@@ -302,7 +302,7 @@ export default function DigitalVisibility() {
                   href={getWhatsAppReservationText()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 rounded-xl bg-brand-red hover:bg-brand-red-dark text-white font-bold tracking-wider uppercase text-xs flex items-center justify-center gap-2 border border-brand-red shadow-lg shadow-brand-red/25 transition-all duration-300"
+                  className="w-full py-4 rounded-xl bg-brand-orange hover:bg-brand-orange-dark text-white font-bold tracking-wider uppercase text-xs flex items-center justify-center gap-2 border border-brand-orange shadow-lg shadow-brand-orange/25 transition-all duration-300"
                 >
                   <MessageSquare className="w-4 h-4" />
                   Confirm via WhatsApp

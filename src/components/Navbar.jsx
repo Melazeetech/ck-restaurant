@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
+import Logo from './Logo';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -42,16 +43,14 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 group">
-            <span className="font-serif text-3xl font-bold tracking-tight text-white transition-all group-hover:text-brand-red">
-              CK<span className="text-brand-red group-hover:text-white">.</span>
-            </span>
-            <div className="hidden sm:flex flex-col border-l border-white/20 pl-2">
-              <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-gray-400">
-                Restaurant
+          {/* Logo & Branding */}
+          <a href="#home" className="flex items-center gap-3 group">
+            <Logo className="w-12 h-12 group-hover:scale-105 transition-transform" />
+            <div className="hidden sm:flex flex-col border-l border-white/20 pl-3">
+              <span className="font-serif text-xl font-bold tracking-tight text-white leading-none">
+                C.K RESTAURANT
               </span>
-              <span className="text-[9px] uppercase tracking-[0.18em] text-brand-red font-medium">
+              <span className="text-[9px] uppercase tracking-[0.18em] text-brand-orange font-medium mt-1">
                 & Fast Food
               </span>
             </div>
@@ -63,10 +62,10 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium tracking-wide text-gray-300 hover:text-white hover:shadow-brand-red/50 transition-colors relative py-2 group"
+                className="text-sm font-medium tracking-wide text-gray-300 hover:text-white hover:shadow-brand-orange/50 transition-colors relative py-2 group"
               >
                 {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-brand-red transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-brand-orange transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -75,7 +74,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href="#reservation"
-              className="px-5 py-2.5 rounded-full bg-brand-red hover:bg-brand-red-dark text-white text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-brand-red hover:scale-105 active:scale-95 shadow-lg shadow-brand-red/20"
+              className="px-5 py-2.5 rounded-full bg-brand-orange hover:bg-brand-orange-dark text-white text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-brand-orange hover:scale-105 active:scale-95 shadow-lg shadow-brand-orange/20"
             >
               Book A Table
             </a>
@@ -84,7 +83,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-full glass-panel-light text-white hover:text-brand-red transition-colors focus:outline-none"
+            className="lg:hidden p-2 rounded-full glass-panel-light text-white hover:text-brand-orange transition-colors focus:outline-none"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -100,7 +99,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 lg:hidden bg-[#0A0505]/95 backdrop-blur-xl flex flex-col justify-center px-8"
+            className="fixed inset-0 z-40 lg:hidden bg-[#051020]/95 backdrop-blur-xl flex flex-col justify-center px-8"
           >
             <div className="flex flex-col gap-6 items-center text-center">
               {navLinks.map((link, idx) => (
@@ -126,7 +125,7 @@ export default function Navbar() {
                 <a
                   href="#reservation"
                   onClick={() => setIsOpen(false)}
-                  className="w-full py-4 text-center rounded-full bg-brand-red hover:bg-brand-red-dark text-white font-semibold uppercase tracking-wider transition-all duration-300 border border-brand-red shadow-lg shadow-brand-red/20"
+                  className="w-full py-4 text-center rounded-full bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold uppercase tracking-wider transition-all duration-300 border border-brand-orange shadow-lg shadow-brand-orange/20"
                 >
                   Book A Table
                 </a>
@@ -134,7 +133,7 @@ export default function Navbar() {
                   href="tel:+2348034364691"
                   className="w-full py-4 text-center rounded-full glass-panel text-white font-semibold flex items-center justify-center gap-2 hover:bg-white/5 transition-all"
                 >
-                  <Phone className="w-4 h-4 text-brand-red" />
+                  <Phone className="w-4 h-4 text-brand-orange" />
                   Call to Order
                 </a>
               </motion.div>

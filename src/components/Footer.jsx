@@ -1,5 +1,6 @@
 import React from 'react';
-import { MessageSquare, ArrowUp, Phone, MapPin, Heart } from 'lucide-react';
+import { MessageSquare, ArrowUp, Phone, MapPin } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -7,9 +8,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#050202] text-gray-400 py-16 overflow-hidden border-t border-white/5">
+    <footer className="relative bg-[#030a14] text-gray-400 py-16 overflow-hidden border-t border-white/5">
       {/* Glow detail */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-red/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
@@ -18,15 +19,13 @@ export default function Footer() {
 
           {/* Column 1: Brand details */}
           <div className="md:col-span-2 text-left">
-            <a href="#home" className="flex items-center gap-2 mb-6 group">
-              <span className="font-serif text-3xl font-bold tracking-tight text-white transition-all group-hover:text-brand-red">
-                CK<span className="text-brand-red group-hover:text-white">.</span>
-              </span>
-              <div className="flex flex-col border-l border-white/20 pl-2">
-                <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-gray-400">
-                  Restaurant
+            <a href="#home" className="flex items-center gap-3 mb-6 group">
+              <Logo className="w-14 h-14 group-hover:scale-105 transition-transform" />
+              <div className="flex flex-col border-l border-white/20 pl-3">
+                <span className="font-serif text-xl font-bold tracking-tight text-white leading-none">
+                  C.K RESTAURANT
                 </span>
-                <span className="text-[9px] uppercase tracking-[0.18em] text-brand-red font-medium">
+                <span className="text-[9px] uppercase tracking-[0.18em] text-brand-orange font-medium mt-1">
                   & Fast Food
                 </span>
               </div>
@@ -42,7 +41,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-red hover:bg-brand-red/10 transition-all"
+                className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-orange hover:bg-brand-orange/10 transition-all"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -53,7 +52,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-red hover:bg-brand-red/10 transition-all"
+                className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-orange hover:bg-brand-orange/10 transition-all"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -64,7 +63,7 @@ export default function Footer() {
                 href="https://wa.me/2348034364691"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-red hover:bg-brand-red/10 transition-all"
+                className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:border-brand-orange hover:bg-brand-orange/10 transition-all"
                 aria-label="WhatsApp"
               >
                 <MessageSquare className="w-4 h-4" />
@@ -103,18 +102,18 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4 text-sm font-light">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-brand-accent shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-brand-orange shrink-0 mt-0.5" />
                 <span>
-                  No. 29/4 Bauchi Road,<br />
-                  Yan Taya Junction, Jos,<br />
+                  No 29/4 Bauchi Road,<br />
+                  Yan Taya Junction, Jos North,<br />
                   Plateau State, Nigeria.
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-brand-accent shrink-0" />
+                <Phone className="w-4 h-4 text-brand-orange shrink-0" />
                 <div className="flex flex-col font-medium text-white">
-                  <a href="tel:+2348034364691" className="hover:text-brand-accent transition-colors">+234 803 436 4691</a>
-                  <a href="tel:+2349025536790" className="hover:text-brand-accent transition-colors">+234 902 553 6790</a>
+                  <a href="tel:+2348034364691" className="hover:text-brand-orange transition-colors">+234 803 436 4691</a>
+                  <a href="tel:+2349025536790" className="hover:text-brand-orange transition-colors">+234 902 553 6790</a>
                 </div>
               </li>
             </ul>
@@ -131,7 +130,7 @@ export default function Footer() {
           {/* Back to top button */}
           <button
             onClick={scrollToTop}
-            className="p-3 rounded-full glass-panel text-gray-400 hover:text-white hover:border-brand-red transition-all cursor-pointer shadow-lg"
+            className="p-3 rounded-full glass-panel text-gray-400 hover:text-white hover:border-brand-orange transition-all cursor-pointer shadow-lg"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-4 h-4" />
@@ -140,9 +139,8 @@ export default function Footer() {
           {/* Developer Credit */}
           <p className="text-xs text-gray-500 font-light flex items-center gap-1">
             Concept Website Designed by{' '}
-            <span className="text-gray-300 font-medium hover:text-brand-accent transition-colors flex items-center gap-0.5">
+            <span className="text-gray-300 font-medium hover:text-brand-orange transition-colors flex items-center gap-0.5">
               GizoGizo Technologies
-              {/* <Heart className="w-3 h-3 text-brand-red fill-brand-red inline" /> */}
             </span>
           </p>
         </div>

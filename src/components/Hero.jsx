@@ -4,19 +4,19 @@ import { ArrowRight, MessageSquare } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-20">
-      {/* Background Image with dark crimson gradients */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#051020] pt-20">
+      {/* Background Image with dark navy gradients */}
       <div className="absolute inset-0 z-0">
         <img
           src="/assets/storefront.png"
           alt="CK Restaurant Storefront Facade"
-          className="w-full h-full object-cover object-center opacity-45 scale-105"
+          className="w-full h-full object-cover object-center opacity-30 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080303] via-black/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080303] via-transparent to-[#080303]/40" />
-        {/* Decorative subtle red radial glows */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-brand-red/10 blur-[120px] pointer-events-none animate-pulse" />
-        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-brand-red/5 blur-[150px] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#051020] via-[#051020]/90 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#051020] via-transparent to-[#051020]/40" />
+        {/* Decorative subtle orange radial glows */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-brand-orange/10 blur-[120px] pointer-events-none animate-pulse" />
+        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-brand-orange/5 blur-[150px] pointer-events-none" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center flex flex-col items-center">
@@ -25,10 +25,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel-light text-brand-accent text-xs font-semibold uppercase tracking-[0.2em] mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel-light text-brand-orange text-xs font-semibold uppercase tracking-[0.2em] mb-6"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-ping" />
-          The Finest Culinary Experience in Jos
+          <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-ping" />
+          Low Cost • High Quality
         </motion.div>
 
         {/* Cinematic Headline */}
@@ -39,7 +39,7 @@ export default function Hero() {
           className="font-serif text-5xl md:text-8xl font-bold tracking-tight text-white mb-6 leading-tight max-w-4xl"
         >
           A Taste You <br className="hidden md:block" />
-          Can <span className="text-gradient-red italic font-semibold">Remember</span>
+          Can <span className="text-gradient-gold italic font-semibold">Remember</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -61,7 +61,7 @@ export default function Hero() {
         >
           <a
             href="#menu"
-            className="group w-full sm:w-auto px-8 py-4 rounded-full bg-brand-red hover:bg-brand-red-dark text-white font-bold tracking-wider uppercase text-xs flex items-center justify-center gap-2 border border-brand-red shadow-lg shadow-brand-red/35 transition-all duration-300 hover:scale-105 hover:shadow-brand-red/50 active:scale-95"
+            className="group w-full sm:w-auto px-8 py-4 rounded-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold tracking-wider uppercase text-xs flex items-center justify-center gap-2 border border-brand-orange shadow-lg shadow-brand-orange/35 transition-all duration-300 hover:scale-105 hover:shadow-brand-orange/50 active:scale-95"
           >
             Explore Our Menu
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
